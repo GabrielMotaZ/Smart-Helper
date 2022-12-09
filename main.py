@@ -26,8 +26,7 @@ def ouvir_microfone():
 
 while True:
     now = datetime.datetime.now()
-    #if(now.time() >= datetime.time(7,30) and now.time() <= datetime.time(7,40)):
-    if(now.time() >= datetime.time(21,20) and now.time() <= datetime.time(22,43) and not mediaPlayer.is_playing() and not tocouHoje):
+    if(now.time() >= datetime.time(7,35) and now.time() <= datetime.time(7,40) and not mediaPlayer.is_playing() and not tocouHoje):
         urlMusica = playlistConfigurada[random.randint(0,playlistConfigurada.length)]
         yt = YouTube(urlMusica)
         video = yt.streams.filter(only_audio=True).first()
