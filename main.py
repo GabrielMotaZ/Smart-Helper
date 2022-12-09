@@ -43,7 +43,7 @@ while True:
         mediaPlayer.play()
 
         tocouHoje = True
-    elif(tocouHoje and now.time() > datetime.time(22,43)):
+    elif(tocouHoje and now.time() > datetime.time(7,40)):
         tocouHoje = False
     try:
         ouvir_microfone()
